@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff5f7">
+  <meta name="description" content="Five little pieces of my heart. A memory collection for Baby Julie.">
+  <title>Our Five Memories · James & Julie</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/memories.css">
+  <script src="js/script.js" defer></script>
+  <script src="js/memories.js" defer></script>
+</head>
+<body data-page="memories">
+  <a class="skip-link" href="#gallery">Skip to our five memories</a>
+  <header class="site-header">
+    <a class="monogram" href="index.html" aria-label="James and Julie, home">J <span>♡</span> J</a>
+    <nav aria-label="Main navigation"><a href="index.html#letter">The letter</a><a href="index.html#surprises">Little secrets</a><a href="memories.html" aria-current="page">Our memories ↗</a></nav>
+    <button class="icon-button" data-theme aria-label="Switch to dreamy night mode">☾</button>
+  </header>
+  <main id="beginning">
+    <section class="memories-heading section">
+      <p class="eyebrow">A collection of us · James & Julie</p>
+      <h1>Five Little Pieces<br><em>of My Heart.</em></h1>
+      <p>Every picture holds a memory, and every memory reminds me<br>how thankful I am for you.</p>
+      <span class="album-note">five photographs. countless feelings.</span>
+    </section>
+    <!-- Exactly five cards. Replace the JPG files and edit each figcaption below. -->
+    <section class="gallery" id="gallery" aria-label="Our five photographs">
+      <figure class="photo-card reveal" data-memory="1">
+        <div class="photo-frame"><button class="photo-open" aria-label="Expand memory 1"><img src="assets/images/julie-1.jpg" alt="James and Julie, memory one"><span class="photo-placeholder"><span aria-hidden="true">♡</span><strong>Our beautiful memory<br>goes here.</strong><small>JULIE-1.JPG</small></span><span class="expand-label">View memory ↗</span></button><span class="floral-corner" aria-hidden="true"></span><button class="favorite" aria-label="Favorite memory 1" aria-pressed="false">♡</button></div>
+        <figcaption class="caption-row"><span class="photo-number">01</span><span class="caption-text">A little moment I want to remember forever.</span></figcaption>
+      </figure>
+      <figure class="photo-card reveal" data-memory="2">
+        <div class="photo-frame"><button class="photo-open" aria-label="Expand memory 2"><img src="assets/images/julie-2.jpg" alt="James and Julie, memory two" loading="lazy"><span class="photo-placeholder"><span aria-hidden="true">♡</span><strong>Our beautiful memory<br>goes here.</strong><small>JULIE-2.JPG</small></span><span class="expand-label">View memory ↗</span></button><span class="floral-corner" aria-hidden="true"></span><button class="favorite" aria-label="Favorite memory 2" aria-pressed="false">♡</button></div>
+        <figcaption class="caption-row"><span class="photo-number">02</span><span class="caption-text">Your smile makes an ordinary day special.</span></figcaption>
+      </figure>
+      <figure class="photo-card reveal" data-memory="3">
+        <div class="photo-frame"><button class="photo-open" aria-label="Expand memory 3"><img src="assets/images/julie-3.jpg" alt="James and Julie, memory three" loading="lazy"><span class="photo-placeholder"><span aria-hidden="true">♡</span><strong>Our beautiful memory<br>goes here.</strong><small>JULIE-3.JPG</small></span><span class="expand-label">View memory ↗</span></button><span class="floral-corner" aria-hidden="true"></span><button class="favorite" aria-label="Favorite memory 3" aria-pressed="false">♡</button></div>
+        <figcaption class="caption-row"><span class="photo-number">03</span><span class="caption-text">One of my favorite memories with you.</span></figcaption>
+      </figure>
+      <figure class="photo-card reveal" data-memory="4">
+        <div class="photo-frame"><button class="photo-open" aria-label="Expand memory 4"><img src="assets/images/julie-4.jpg" alt="James and Julie, memory four" loading="lazy"><span class="photo-placeholder"><span aria-hidden="true">♡</span><strong>Our beautiful memory<br>goes here.</strong><small>JULIE-4.JPG</small></span><span class="expand-label">View memory ↗</span></button><span class="floral-corner" aria-hidden="true"></span><button class="favorite" aria-label="Favorite memory 4" aria-pressed="false">♡</button></div>
+        <figcaption class="caption-row"><span class="photo-number">04</span><span class="caption-text">Thankful for every moment we get to share.</span></figcaption>
+      </figure>
+      <figure class="photo-card reveal" data-memory="5">
+        <div class="photo-frame"><button class="photo-open" aria-label="Expand memory 5"><img src="assets/images/julie-5.jpg" alt="James and Julie, memory five" loading="lazy"><span class="photo-placeholder"><span aria-hidden="true">♡</span><strong>Our beautiful memory<br>goes here.</strong><small>JULIE-5.JPG</small></span><span class="expand-label">View memory ↗</span></button><span class="floral-corner" aria-hidden="true"></span><button class="favorite" aria-label="Favorite memory 5" aria-pressed="false">♡</button></div>
+        <figcaption class="caption-row"><span class="photo-number">05</span><span class="caption-text">A memory I will always keep close to my heart.</span></figcaption>
+      </figure>
+    </section>
+    <section class="album-ending"><p class="eyebrow">A place for our real moments</p><p>Ready for our photographs,<br>and all the stories they will hold.</p><p id="favorites-status" role="status">0 of 5 memories close to your heart.</p><a class="button secondary" href="index.html">← Back to My Love Letter</a></section>
+  </main>
+  <dialog class="lightbox" aria-labelledby="lightbox-caption">
+    <button class="icon-button lightbox-close" aria-label="Close photograph">×</button>
+    <div class="lightbox-stage"><img id="lightbox-image" alt="" hidden><div id="lightbox-placeholder"><span aria-hidden="true">♡</span><p>Our beautiful memory goes here.</p></div></div>
+    <div class="lightbox-controls"><button class="icon-button" id="previous-photo" aria-label="Previous photograph">←</button><span id="lightbox-count" aria-live="polite">1 / 5</span><button class="icon-button" id="next-photo" aria-label="Next photograph">→</button></div>
+    <p id="lightbox-caption"></p><small class="lightbox-hint">Swipe or use ← → · Press Escape to close</small>
+  </dialog>
+  <footer><span class="footer-heart reveal" aria-hidden="true">♡</span><p>Made with love by James Traigo.</p><small>Every little moment matters.</small><a class="text-button" href="#beginning">Back to the Beginning ↑</a></footer>
+  <noscript><p class="noscript">Enable JavaScript to favorite photographs and open the lightbox.</p></noscript>
+</body>
+</html>
